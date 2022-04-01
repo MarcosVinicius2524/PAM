@@ -1,26 +1,25 @@
 import {View,Image,Text,TouchableOpacity,StyleSheet} from 'react-native'
 import React from 'react';
 import {Ionicons} from '@expo/vector-icons';
-import Cabecalho from './src/components/Cabecalho/Cabecalho';
-import Botao from './src/components/botoes/Index';
 
 
 
 
-export default function App(){
+export default function Cabecalho(){
 
     return(
-       <View>
-           <Cabecalho>
-           <Botao
-           Logo="game"
-           texto="Jogos"
-           cor="green"
-               />        
-                
-           </Cabecalho> 
-        
-       </View>
+
+
+
+        <View style={estilo.header}>
+
+            <Ionicons name="menu" size={24} color="white"/>
+            <Text style ={estilo.Texto}> Play store </Text>            
+            <Ionicons name="ios-search-sharp" size={24} color="white"/>
+            
+        </View>
+
+
 
     );
   }
